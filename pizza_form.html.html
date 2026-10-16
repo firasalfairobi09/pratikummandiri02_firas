@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Goose Bistro | Pizza-on-Demand</title>
+</head>
+<body>
+
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+    <!-- Form dikirim ke URL tujuan menggunakan metode POST -->
+    <form action="http://blackgoosebistro.com/pizza.php" method="POST">
+        
+        <h3>Your Information</h3>
+        <p>
+            <label for="customername">Name:</label><br>
+            <input type="text" id="customername" name="customername" required>
+        </p>
+        <p>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required>
+        </p>
+        <p>
+            <label for="telephone">Telephone Number:</label><br>
+            <input type="tel" id="telephone" name="telephone" required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="instructions">Delivery instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="4" cols="40" maxlength="400" placeholder="No more than 400 characters long"></textarea>
+        </p>
+
+        <h3>Design Your Dream Pizza:</h3>
+        <p><strong>Pizza specs</strong></p>
+
+        <!-- Pilihan Crust (Radio Button) -->
+        <p>Crust (Choose one):</p>
+        <label><input type="radio" name="crust" value="Classic white" checked> Classic white</label><br>
+        <label><input type="radio" name="crust" value="Multigrain"> Multigrain</label><br>
+        <label><input type="radio" name="crust" value="Cheese-stuffed crust"> Cheese-stuffed crust</label><br>
+        <label><input type="radio" name="crust" value="Gluten-free"> Gluten-free</label>
+
+        <!-- Pilihan Toppings (Checkbox dengan name="toppings[]") -->
+        <p>Toppings (Choose as many as you want):</p>
+        <label><input type="checkbox" name="toppings[]" value="sambel terasi" checked> sambel terasi</label><br>
+        <label><input type="checkbox" name="toppings[]" value="mayones" checked> mayones</label><br>
+        <label><input type="checkbox" name="toppings[]" value="sambel geprek" checked> sambel geprek</label><br>
+        <label><input type="checkbox" name="toppings[]" value="kecap"> kecap</label><br>
+        <label><input type="checkbox" name="toppings[]" value="jamur tiran"> jamur tiran</label><br>
+        <label><input type="checkbox" name="toppings[]" value="plastikin"> plastikin</label><br>
+        <label><input type="checkbox" name="toppings[]" value="masako"> masako</label>
+
+        <!-- Pilihan Jumlah Pizza (Select / Dropdown) -->
+        <p>
+            <label for="number">Number<br>How many pizzas:</label>
+            <select id="number" name="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </p>
+
+        <!-- Tombol Aksi -->
+        <p>
+            <button type="submit">Bring me a pizza!</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

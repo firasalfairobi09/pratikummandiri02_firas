@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>A Web Page - Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <!-- 1. Menu Navigasi di Atas -->
+    <p>
+        <a href="#">Home</a> | 
+        <a href="#">Generate Link</a> | 
+        <a href="#">Transaction History</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">Logout</a>
+    </p>
+    <hr>
+
+    <!-- 2. Formulir Utama -->
+    <form action="#" method="POST">
+        
+        <!-- Bagian Upload Gambar (Kotak Foto) -->
+        <p>
+            <strong>Upload Picture:</strong><br>
+            <input type="file" name="upload_picture">
+        </p>
+
+        <!-- Bagian Judul Barang -->
+        <p>
+            <label>Title Here :</label><br>
+            <input type="text" name="title" value="MacBook Air £800" size="45">
+        </p>
+
+        <!-- Bagian Deskripsi -->
+        <p>
+            <label>Description :</label><br>
+            <textarea name="description" rows="4" cols="45">Year : 2009
+Model :
+Condition : Mint</textarea>
+        </p>
+
+        <!-- Bagian Nomor Rekening -->
+        <p>
+            <label>Account Number :</label><br>
+            <input type="text" name="account_number" value="123-456-789-0" size="45">
+        </p>
+
+        <!-- Bagian Pilihan Bank (Dropdown) -->
+        <p>
+            <label>Bank :</label><br>
+            <select name="bank">
+                <option value="HSBC" selected>HSBC</option>
+                <option value="BCA">BCA</option>
+                <option value="Mandiri">Mandiri</option>
+            </select>
+        </p>
+
+        <!-- Bagian Pemilik Akun -->
+        <p>
+            <label>Account Holder :</label><br>
+            <input type="text" name="account_holder" value="Name Here" size="45">
+        </p>
+
+        <!-- Bagian Jumlah Transaksi -->
+        <p>
+            <label>Transaction :</label><br>
+            <input type="number" name="transaction" value="1" min="1" max="10"><br>
+            <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small>
+        </p>
+
+        <!-- Bagian Centang (Checkbox) -->
+        <p>
+            <input type="checkbox" name="send_sms" checked> Send to Mobile Phone<br>
+            <input type="checkbox" name="send_email" checked> Send to Email
+        </p>
+
+        <!-- Bagian Kontak HP & Email Tujuan -->
+        <p>
+            <label>Send to Mobile Phone :</label><br>
+            <input type="text" name="mobile_phone" value="1234567890, 1234567891" size="45">
+        </p>
+
+        <p>
+            <label>Send to Email :</label><br>
+            <input type="text" name="email_dest" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" size="45">
+        </p>
+
+        <!-- Tombol Submit / Kirim -->
+        <p>
+            <button type="submit">Generate Nahr Link</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
